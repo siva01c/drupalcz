@@ -4,9 +4,10 @@ docroot: docroot
 php_version: "8.3"
 webserver_type: apache-fpm
 nodejs_version: "18"
-# Non-default: 80/443 are taken by the traefik proxy on the lkv host.
-router_http_port: "8080"
-router_https_port: "8443"
+# Non-default: on the lkv host 80/443 belong to the traefik proxy and
+# 8080/8443 to ragchat-nginx, so the router needs its own free pair.
+router_http_port: "8081"
+router_https_port: "8444"
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
