@@ -23,7 +23,6 @@
         "drupal/admin_toolbar": "^3.4",
         "drupal/better_normalizers": "^2.0@beta",
         "drupal/captcha": "^1.0@beta",
-        "drupal/ckeditor": "^1.0",
         "drupal/classy": "^2.0",
         "drupal/coder": "^8.3",
         "drupal/config_split": "^1.4",
