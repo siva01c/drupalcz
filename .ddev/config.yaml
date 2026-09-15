@@ -1,7 +1,8 @@
 name: drupalcz
 type: drupal10
 docroot: docroot
-php_version: "8.3"
+# Matches the cloud hosting, which runs 8.2 — do not raise without raising it there.
+php_version: "8.2"
 webserver_type: apache-fpm
 nodejs_version: "18"
 # Non-default: on the lkv host 80/443 belong to the traefik proxy and
