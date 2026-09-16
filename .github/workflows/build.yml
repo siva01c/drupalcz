@@ -40,7 +40,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          # 20.19+ is the floor: build.sh builds the Dropzone library, which pulls
+          # sass ^1.33 — that resolves to 1.100+ and refuses to install below it.
+          node-version: '22'
       - name: Setup PHP and tools
         uses: shivammathur/setup-php@v2
         with:
