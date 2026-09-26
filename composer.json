@@ -83,6 +83,9 @@
         "npm-asset/backbone": "*",
         "npm-asset/underscore": "*"
     },
+    "conflict": {
+        "twig/twig": ">=3.30"
+    },
     "config": {
         "sort-packages": true,
         "process-timeout": 0,
